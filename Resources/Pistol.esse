@@ -1,0 +1,6 @@
+LeftDown 1
+Delay 30 ms
+MoveR 0 12
+LeftUp 1
+MoveR 0 0
+Delay 54 ms

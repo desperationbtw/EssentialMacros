@@ -1,0 +1,90 @@
+﻿<Page x:Class="EssentialMacros.Pages.SettingsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:MaterialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:Pages="clr-namespace:EssentialMacros.Pages"
+      xmlns:Local="clr-namespace:EssentialMacros"
+      mc:Ignorable="d" 
+      d:DesignHeight="324" d:DesignWidth="650"
+      Title="Login" ShowsNavigationUI="False" Loaded="Page_Loaded">
+
+    <StackPanel Orientation="Vertical">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0">
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type Local:SliderControl}">
+                        <Setter Property="Margin" Value="12,5,12,0"/>
+                    </Style>
+                </StackPanel.Resources>
+                <TextBlock TextAlignment="Center" Text="ОСНОВНОЕ" Foreground="White" Margin="5,5,0,0" FontSize="18">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="White" BlurRadius="10" ShadowDepth="0" Opacity="0.2"/>
+                    </TextBlock.Effect>
+                </TextBlock>
+                <Local:SliderControl x:Name="Sens" ValueChanged="Sens_ValueChanged" SliderText="ЧУВСТВИТЕЛЬНОСТЬ" Min="0.1" Max="2" Step="0.1"/>
+                <Local:SliderControl x:Name="Fov" ValueChanged="Fov_ValueChanged" SliderText="УГОЛ ОБЗОРА (FOV)" Min="70" Max="90" Step="0.1"/>
+
+                <Grid>
+                    <Grid HorizontalAlignment="Center">
+                        <TextBlock Text="ПРИЦЕЛ" Foreground="White" Margin="5,5,0,0" FontSize="18">
+                            <TextBlock.Effect>
+                                <DropShadowEffect Color="White" BlurRadius="10" ShadowDepth="0" Opacity="0.2"/>
+                            </TextBlock.Effect>
+                        </TextBlock>
+                    </Grid>
+                    <Grid HorizontalAlignment="Right">
+                        <ToggleButton x:Name="Crosshair" IsChecked="False" Margin="0 5 10 0" Style="{StaticResource MaterialDesignSwitchDarkToggleButton}"/>
+                    </Grid>
+                </Grid>
+                <Local:SliderControl x:Name="CrosshairSize" ValueChanged="Fov_ValueChanged" SliderText="РАЗМЕР" Min="0.2" Max="1" Step="0.1"/>
+                <Local:SliderControl x:Name="CrosshairOpacity" ValueChanged="Fov_ValueChanged" SliderText="ПРОЗРАЧНОСТЬ" Min="300" Max="600" Step="1"/>
+                <Local:SliderControl x:Name="CrosshairY" ValueChanged="Fov_ValueChanged" SliderText="ГОРИЗОНТАЛЬНОЕ СМЕЩЕНИЕ" Min="0.01" Max="1" Step="0.01"/>
+                <Grid>
+                    <Grid HorizontalAlignment="Center">
+                        <TextBlock Text="ОВЕРЛЕЙ" Foreground="White" Margin="5,5,0,0" FontSize="18">
+                            <TextBlock.Effect>
+                                <DropShadowEffect Color="White" BlurRadius="10" ShadowDepth="0" Opacity="0.2"/>
+                            </TextBlock.Effect>
+                        </TextBlock>
+                    </Grid>
+                    <Grid HorizontalAlignment="Right">
+                        <StackPanel Margin="0 5 10 0" Orientation="Horizontal">
+                            <MaterialDesign:PackIcon x:Name="OverlayInfo" Foreground="Orange" Kind="InfoCircle" MouseEnter="OverlayInfo_MouseEnter" MouseLeave="OverlayInfo_MouseLeave" Margin="0 0 5 0" Height="16" Width="16" VerticalAlignment="Center"/>
+                            <ToggleButton x:Name="Overlay" IsChecked="False" Style="{StaticResource MaterialDesignSwitchDarkToggleButton}"/>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+                <Grid>
+                    <Grid HorizontalAlignment="Center">
+                        <TextBlock Text="ФИКС ИНВЕНТАРЯ" Foreground="White" Margin="5,5,0,0" FontSize="18">
+                            <TextBlock.Effect>
+                                <DropShadowEffect Color="White" BlurRadius="10" ShadowDepth="0" Opacity="0.2"/>
+                            </TextBlock.Effect>
+                        </TextBlock>
+                    </Grid>
+                    <Grid HorizontalAlignment="Right">
+                        <StackPanel Margin="0 5 10 0" Orientation="Horizontal">
+                            <MaterialDesign:PackIcon x:Name="InventoryInfo" Foreground="Orange" Kind="InfoCircle" MouseEnter="InventoryInfo_MouseEnter" MouseLeave="InventoryInfo_MouseLeave" Margin="0 0 5 0" Height="16" Width="16" VerticalAlignment="Center"/>
+                            <ToggleButton x:Name="Inventory" IsChecked="False" Style="{StaticResource MaterialDesignSwitchDarkToggleButton}"/>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+                <Local:BindControl x:Name="InventiryBind" Width="626" BindText="ИНВЕНТАРЬ"/>
+            </StackPanel>
+            <Grid Panel.ZIndex="1000" Visibility="Collapsed">
+                <Grid.Background>
+                    <SolidColorBrush Color="Black" Opacity=".5"/>
+                </Grid.Background>
+            </Grid>
+            <Grid x:Name="InfoOverlay" Background="#80000000" Width="200" Height="100" Visibility="Hidden">
+                <Label x:Name="InfoOverlayTitle" Content="TITLE" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="InfoOverlayText" Width="200" Foreground="White" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Text="SAMPLE"/>
+            </Grid>
+        </Grid>
+    </StackPanel>
+</Page>

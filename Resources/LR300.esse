@@ -1,0 +1,206 @@
+LeftDown 1
+
+MoveR -4 7
+Delay 39 ms
+MoveR -4 7
+Delay 39 ms
+MoveR -3 6
+Delay 40 ms
+MoveR -3 6
+
+Delay 39 ms
+MoveR -2 6
+Delay 39 ms
+MoveR -2 6
+Delay 39 ms
+MoveR -1 6
+
+Delay 39 ms
+MoveR -2 5
+Delay 39 ms
+MoveR -2 6
+Delay 40 ms
+MoveR -1 6
+
+Delay 39 ms
+MoveR -2 6
+Delay 39 ms
+MoveR -2 6
+Delay 39 ms
+MoveR -1 6
+
+Delay 39 ms
+MoveR -2 6
+Delay 39 ms
+MoveR -2 5
+Delay 40 ms
+MoveR -1 5
+
+Delay 39 ms
+MoveR -2 5
+Delay 39 ms
+MoveR -2 5
+Delay 39 ms
+MoveR -1 4
+
+Delay 39 ms
+MoveR -1 4
+Delay 39 ms
+MoveR -1 3
+Delay 40 ms
+MoveR -1 3
+
+Delay 39 ms
+MoveR 0 2
+Delay 39 ms
+MoveR 1 2
+Delay 39 ms
+MoveR 1 2
+
+Delay 39 ms
+MoveR 3 2
+Delay 39 ms
+MoveR 4 2
+Delay 40 ms
+MoveR 4 1
+
+Delay 39 ms
+MoveR 4 2
+Delay 39 ms
+MoveR 4 2
+Delay 39 ms
+MoveR 3 1
+
+Delay 39 ms
+MoveR 4 1
+Delay 39 ms
+MoveR 4 1
+Delay 40 ms
+MoveR 3 1
+
+Delay 39 ms
+MoveR 3 1
+Delay 39 ms
+MoveR 3 1
+Delay 39 ms
+MoveR 2 1
+
+Delay 39 ms
+MoveR 0 1
+Delay 39 ms
+MoveR -1 1
+Delay 40 ms
+MoveR -1 1
+
+Delay 39 ms
+MoveR -1 1
+Delay 39 ms
+MoveR -1 1
+Delay 39 ms
+MoveR -2 0
+
+Delay 39 ms
+MoveR -2 1
+Delay 39 ms
+MoveR -2 1
+Delay 40 ms
+MoveR -1 0
+
+Delay 39 ms
+MoveR -2 1
+Delay 39 ms
+MoveR -2 1
+Delay 39 ms
+MoveR -2 1
+
+Delay 39 ms
+MoveR -2 1
+Delay 39 ms
+MoveR -2 1
+Delay 40 ms
+MoveR -3 0
+
+Delay 39 ms
+MoveR -3 1
+Delay 39 ms
+MoveR -3 1
+Delay 39 ms
+MoveR -2 0
+
+Delay 39 ms
+MoveR -3 1
+Delay 39 ms
+MoveR -3 0
+Delay 40 ms
+MoveR -2 1
+
+Delay 39 ms
+MoveR -3 0
+Delay 39 ms
+MoveR -3 0
+Delay 39 ms
+MoveR -2 1
+
+Delay 39 ms
+MoveR -2 0
+Delay 39 ms
+MoveR -2 0
+Delay 40 ms
+MoveR -2 1
+
+Delay 39 ms
+MoveR -2 0
+Delay 39 ms
+MoveR -2 0
+Delay 39 ms
+MoveR -2 1
+
+Delay 39 ms
+MoveR -2 0
+Delay 39 ms
+MoveR -2 0
+Delay 40 ms
+MoveR -2 1
+
+Delay 120 ms
+MoveR -1 1
+
+Delay 39 ms
+MoveR 0 0
+Delay 39 ms
+MoveR 0 1
+Delay 40 ms
+MoveR 0 1
+
+Delay 39 ms
+MoveR 5 0
+Delay 39 ms
+MoveR 6 0
+Delay 39 ms
+MoveR 6 1
+
+Delay 39 ms
+MoveR 6 0
+Delay 39 ms
+MoveR 6 0
+Delay 40 ms
+MoveR 6 1
+
+Delay 39 ms
+MoveR 6 0
+Delay 39 ms
+MoveR 6 0
+Delay 39 ms
+MoveR 5 1
+
+Delay 39 ms
+MoveR 6 0
+Delay 39 ms
+MoveR 6 0
+Delay 40 ms
+MoveR 6 1
+
+Delay 120 ms
+Delay 120 ms
+LeftUp 1
+Delay 640 ms

@@ -1,0 +1,47 @@
+﻿<Page x:Class="EssentialMacros.Pages.BindingPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:MaterialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:Pages="clr-namespace:EssentialMacros.Pages"
+      xmlns:Local="clr-namespace:EssentialMacros"
+      mc:Ignorable="d" 
+      d:DesignHeight="324" d:DesignWidth="650"
+      Title="Login" ShowsNavigationUI="False">
+    <StackPanel Orientation="Vertical">
+        <ScrollViewer Height="324" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel HorizontalAlignment="Left">
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type Local:BindControl}">
+                        <Setter Property="Margin" Value="5,5,0,0"/>
+                    </Style>
+                </StackPanel.Resources>
+                <TextBlock TextAlignment="Center" Text="ОРУЖИЕ" Foreground="White" Margin="5,5,0,0" FontSize="18">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="White" BlurRadius="10" ShadowDepth="0" Opacity="0.2"/>
+                    </TextBlock.Effect>
+                </TextBlock>
+
+                <Local:BindControl x:Name="ak_47" Width="626" BindText="AK 47"/>
+                <Local:BindControl x:Name="berdanka" Width="626" BindText="Berdanka"/>
+                <Local:BindControl x:Name="beretta" Width="626" BindText="Beretta"/>
+                <Local:BindControl x:Name="lr300" Width="626" BindText="LR300"/>
+                <Local:BindControl x:Name="m249" Width="626" BindText="M249"/>
+                <Local:BindControl x:Name="mp5a4" Width="626" BindText="MP5A4"/>
+                <Local:BindControl x:Name="pistol" Width="626" BindText="Pistol"/>
+                <Local:BindControl x:Name="python" Width="626" BindText="Python"/>
+                <Local:BindControl x:Name="revolver" Width="626" BindText="Revolver"/>
+                <Local:BindControl x:Name="smg" Width="626" BindText="SMG"/>
+                <Local:BindControl x:Name="tompson" Width="626" BindText="Tompson"/>
+                <Local:BindControl x:Name="m39" Width="626" BindText="M39"/>
+
+                <TextBlock TextAlignment="Center" Text="ПРОЧЕЕ" Foreground="White" Margin="5,5,0,0" FontSize="18">
+                    <TextBlock.Effect>
+                        <DropShadowEffect Color="White" BlurRadius="10" ShadowDepth="0" Opacity="0.2"/>
+                    </TextBlock.Effect>
+                </TextBlock>
+            </StackPanel>
+        </ScrollViewer>
+    </StackPanel>
+</Page>
